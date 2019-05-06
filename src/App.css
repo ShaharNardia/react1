@@ -1,0 +1,148 @@
+body {
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.mainDiv {
+  margin-top: 10%;
+}
+.containerDiv {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.containerDiv > div {
+  margin: 1% auto 3% auto;
+  width: 30%;
+}
+.containerDiv > div > div {
+  width: 80%;
+  margin: 0 auto;
+  border-width: 1pt;
+  border-color: silver;
+  border-style: inset;
+  -webkit-box-shadow: 0px 1px 1px silver;
+  -moz-box-shadow: 0px 1px 1px silver;
+  box-shadow: 0px 1px 1px silver;
+}
+.containerDiv > div > div > img {
+  width: 100%;
+}
+
+.singleVideoDiv{
+  width: 100%;
+}
+.singleVideoDiv .videoTitle,
+.singleVideoDiv img,
+.singleVideoDiv .videoDetailsDiv
+ {
+  width: 80% !important;
+}
+
+
+
+.header {
+  color: white;
+  background-color: #dd2e2d;
+  text-align: center;
+  padding: 3%;
+  font-weight: 100;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  font-size: 24pt;
+  font-family: sans-serif;
+}
+.title {
+  color: black;
+  text-align: center;
+  font-size: 28pt;
+  font-weight: 300;
+}
+.videoTitle {
+  overflow: hidden;
+  color: black;
+  margin: 8% 0 8% 7%;
+  text-align: left;
+  width: 80%;
+  font-weight: 100;
+  font-size: 15pt;
+  line-height: 1.5;
+  height: 60px;
+}
+.singleVideoDiv .videoTitle {
+  overflow: hidden;
+  color: black;
+  margin: 5% auto;
+  text-align: center;
+  width: 80% !important;
+  font-size: 10pt;
+}
+.videoDetails {
+  color: #a3a3a3;
+}
+.letsWatchLink,
+.watchOnYoutube {
+  border-width: 0.1pt;
+  padding: 20px 0;
+  border-top-style: inset;
+  text-align: left;
+  width: 100%;
+}
+.letsWatchLink a,
+.watchOnYoutube a {
+  margin-left: 10%;
+  color: red;
+  cursor: pointer;
+  text-decoration: none;
+
+  font-size: 10pt;
+}
+.letsWatchLink a {
+  margin-left: 7%;
+}
+.backToListLink {
+  margin: 3% 6%;
+}
+.backToListLink > a {
+  text-decoration: none;
+  color: #9ecdf3;
+  font-weight: 500;
+}
+.videoDetailsDiv {
+  line-height: 1.6;
+  margin: 10% auto;
+}
+.videoDetailsDiv > div {
+  text-align: left;
+}
+@media screen and (max-width: 992px) {
+  .containerDiv > div {
+    flex: 1 1 40%;
+  }
+  .mainDiv {
+    margin-top: 13%;
+  }
+
+  .title {
+    font-size: 25pt;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .containerDiv > div {
+    flex: 1 1 90%;
+  }
+  .mainDiv {
+    margin-top: 18%;
+  }
+
+  .title {
+    font-size: 20pt;
+    font-weight: 300;
+  }
+}
